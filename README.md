@@ -1,1 +1,0 @@
-# polytheshepard.github.io
