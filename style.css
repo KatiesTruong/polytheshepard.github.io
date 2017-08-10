@@ -1,2 +1,100 @@
+html {
+	box-sizing: border-box;
+	/* removes scroll bars*/
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 90px;
+	font-family: 'Arial', sans-serif;
+	color: black;
+	position: absolute;
+	top: 5em;
+	width: 100%;
+	box-sizing: border-box; /* allows for the text remain in entire page */
+	text-align: center;
+	letter-spacing: 3px;
+	border-top: solid;
+	border-bottom: solid;
+	margin: 0;
+	-webkit-transform: translateZ(-0.5px) scale(1.5);
+	transform: translateZ(-0.5px) scale(1.5);
+
+}
+
+h2 {
+	font-family: 'Arimo' , sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 1px;
+	/*position: fixed;*/
+}
+
+ul{
+	list-style-type: none;
+}
+
 body {
-font-family: "Arimo" , "Open Sans", sans-serif;
+	height: 100vh;
+	margin: 0;
+	overflow-y: :auto;
+	overflow-x: hidden;
+	/* screen performance for mobile*/
+	-webkit-overflow-scrolling: touch;
+
+  -webkit-perspective: 1px;
+	perspective: 1px;
+}
+
+img {
+	width: 100%;
+	opacity: 0.8;
+	/*listed items attached, shall make each dot point load black
+	when mouse hovers*/
+}
+
+.parallax-group {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.back {
+	/*making it a bit slow*/
+	-webkit-transform: translateZ(-1px) scale(2.1);/* scale helps fix the image back to original size*/
+	transform: translateZ(-1px) scale(2.1);
+	position: relative;
+	top: calc(((100vh - 70.00vw ) / 4) * -2);
+}
+/*Make it have motion */
+
+.about {
+	font-size: 40px;
+}
+
+.contact {
+	/* behind the first black box*/
+	padding: 400px;
+	height: 100vh;
+	width: 100%;
+}
+
+.contact {
+	min-height: : 400px;
+	background-size: cover;
+}
+
+.front {
+	background-color: black;
+	padding: 14em 1em;
+	position: relative;
+	z-index: 2;
+	color: white;
+	text-align: center;
+	font-family: 'PT+Sans', sans-serif;
+}
+
+.background {
+	font-family: 'Arimo', sans-serif;
+	position: absolute;
+	font-size: 15px;
+}
