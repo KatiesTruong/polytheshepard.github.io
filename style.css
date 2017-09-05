@@ -4,9 +4,42 @@ html {
 	overflow: hidden;
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 20px;
+	text-decoration: none;
+	overflow: hidden;
+	font-family: Open Sans, sans-serif;
+}
+
+li {
+	display: inline;
+	float: right;
+}
+
+li a {
+	display: block;
+	padding: 8px;
+	font-size: 20px;
+	opacity: 0.5;
+	color: black;
+	text-decoration: none;
+}
+
+li a:hover {
+	opacity: 1;
+	visibility: inherit;
+	color: black;
+}
+
+/*After the hovering reverts back to black*/
+li a:hover::after{
+	opacity: 1;
+}
+
 h1 {
 	font-size: 90px;
-	font-family: 'Arial', sans-serif;
 	color: black;
 	position: absolute;
 	top: 5em;
@@ -14,26 +47,26 @@ h1 {
 	box-sizing: border-box; /* allows for the text remain in entire page */
 	text-align: center;
 	letter-spacing: 3px;
-	border-top: solid;
-	border-bottom: solid;
+	border-top: 2.5px solid;
+	border-bottom: 2.5px solid;
+	height:130px;
 	margin: 0;
 	-webkit-transform: translateZ(-0.5px) scale(1.5);
 	transform: translateZ(-0.5px) scale(1.5);
+	font-family: 'Encode Sans Semi Condensed', sans-serif;
+	font-weight: lighter;
 
 }
 
 h2 {
 	font-family: 'Arimo' , sans-serif;
-	font-size: 30px;
+	font-size: 20px;
 	text-align: center;
 	color: #fff;
-	letter-spacing: 1px;
-	/*position: fixed;*/
+	letter-spacing: 3px;
+	/*position: absolute;*/
 }
 
-ul{
-	list-style-type: none;
-}
 
 body {
 	height: 100vh;
@@ -42,14 +75,13 @@ body {
 	overflow-x: hidden;
 	/* screen performance for mobile*/
 	-webkit-overflow-scrolling: touch;
-
-  -webkit-perspective: 1px;
+	-webkit-perspective: 1px;
 	perspective: 1px;
 }
 
 img {
 	width: 100%;
-	opacity: 0.8;
+	opacity: 0.7;
 	/*listed items attached, shall make each dot point load black
 	when mouse hovers*/
 }
@@ -58,6 +90,18 @@ img {
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
+
+.skills {
+	top: 17em;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	-webkit-transform: translateZ(-0.5px) scale(1.5);
+	transform: translateZ(-0.5px) scale(1.5);
+}
+
 .back {
 	/*making it a bit slow*/
 	-webkit-transform: translateZ(-1px) scale(2.1);/* scale helps fix the image back to original size*/
@@ -67,30 +111,69 @@ img {
 }
 /*Make it have motion */
 
+
+
 .about {
 	font-size: 40px;
+	padding: 100px;
+	position: relative;
+	z-index: 2;
+	text-align: left;
+	font-family: 'PT-Sans', sans-serif;
+	background-color: white;
+	color: grey;
+}
+
+.details {
+	font-size: 20px;
 }
 
 .contact {
-	/* behind the first black box*/
-	padding: 400px;
-	height: 100vh;
-	width: 100%;
+	/*centers the box*/
+	margin: auto;
+	border: 1px solid;
+	border-radius: 5px;
+	left: 50%;
+	width: 120px;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-weight: lighter;
+	font-family: Open Sans, sans-serif;
+	font-weight: lighter;
+	font-size: 17px;
+	text-transform: uppercase;
+	cursor: pointer;	
 }
 
-.contact {
-	min-height: : 400px;
-	background-size: cover;
+.contact:hover {
+	background-color: grey;
+	font-weight: lighter;
+}
+
+
+.portfolio {
+	
 }
 
 .front {
 	background-color: black;
-	padding: 14em 1em;
+	padding: 12em 1em;
 	position: relative;
 	z-index: 2;
 	color: white;
 	text-align: center;
 	font-family: 'PT+Sans', sans-serif;
+	font-size: 20px;
+}
+
+.intro {
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .background {
