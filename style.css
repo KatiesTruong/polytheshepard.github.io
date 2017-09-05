@@ -5,11 +5,10 @@ html {
 }
 
 ul {
-	list-style-type: none;
+	/*list-style-type: none;*/
 	margin: 0;
-	padding: 20px;
 	text-decoration: none;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	font-family: Open Sans, sans-serif;
 }
 
@@ -42,7 +41,7 @@ h1 {
 	font-size: 90px;
 	color: black;
 	position: absolute;
-	top: 4em;
+	top: 2em;
 	width: 100%;
 	box-sizing: border-box; /* allows for the text remain in entire page */
 	text-align: center;
@@ -53,7 +52,7 @@ h1 {
 	margin: 0;
 	-webkit-transform: translateZ(-0.5px) scale(1.5);
 	transform: translateZ(-0.5px) scale(1.5);
-	font-family: 'Encode Sans Semi Condensed', sans-serif;
+	font-family: Encode Sans Semi Condensed, sans-serif;
 	font-weight: lighter;
 
 }
@@ -71,7 +70,7 @@ h2 {
 body {
 	height: 100vh;
 	margin: 0;
-	overflow-y: :auto;
+	overflow-y: auto;
 	overflow-x: hidden;
 	/* screen performance for mobile*/
 	-webkit-overflow-scrolling: touch;
@@ -92,7 +91,7 @@ img {
 }
 
 .skills {
-	top: 15em;
+	top: 8em;
 	position: absolute;
 	text-align: center;
 	width: 100%;
@@ -115,13 +114,16 @@ img {
 
 .about {
 	font-size: 40px;
-	padding: 100px;
+	padding: 0em 1em;
+	margin: 0;
 	position: relative;
 	z-index: 2;
 	text-align: left;
 	font-family: 'PT-Sans', sans-serif;
 	background-color: white;
 	color: grey;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 }
 
 .details {
@@ -157,13 +159,14 @@ img {
 
 .front {
 	background-color: black;
-	padding: 12em 1em;
+	padding: 10em 1em;
 	position: relative;
 	z-index: 2;
 	color: white;
 	text-align: center;
 	font-family: 'PT+Sans', sans-serif;
 	font-size: 20px;
+	top: -1em;
 }
 
 .intro {
