@@ -42,7 +42,7 @@ h1 {
 	font-size: 90px;
 	color: black;
 	position: absolute;
-	top: 5em;
+	top: 4em;
 	width: 100%;
 	box-sizing: border-box; /* allows for the text remain in entire page */
 	text-align: center;
@@ -92,7 +92,7 @@ img {
 }
 
 .skills {
-	top: 17em;
+	top: 15em;
 	position: absolute;
 	text-align: center;
 	width: 100%;
