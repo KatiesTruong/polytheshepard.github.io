@@ -4,32 +4,38 @@ html {
 	overflow: hidden;
 }
 
+.top-bar {
+    width: 1600px;
+    background-color: #FFFFFF;
+    position: absolute;
+}
 ul {
 	/*list-style-type: none;*/
 	margin: 0;
 	text-decoration: none;
 	/*overflow: hidden;*/
-	font-family: Open Sans, sans-serif;
+	font-family: 'Open Sans', sans-serif;
+    width: 350px;
 }
 
 li {
 	display: inline;
 	float: right;
+    padding-right: 20px;
 }
 
 li a {
 	display: block;
-	padding: 8px;
-	font-size: 20px;
+	font-size: 23px;
 	opacity: 0.5;
-	color: black;
+	color: #000000;
 	text-decoration: none;
 }
 
 li a:hover {
 	opacity: 1;
 	visibility: inherit;
-	color: black;
+	color: #000000;
 }
 
 /*After the hovering reverts back to black*/
@@ -39,7 +45,7 @@ li a:hover::after{
 
 h1 {
 	font-size: 90px;
-	color: black;
+	color: #000000;
 	position: absolute;
 	top: 2em;
 	width: 100%;
@@ -54,18 +60,28 @@ h1 {
 	transform: translateZ(-0.5px) scale(1.5);
 	font-family: Encode Sans Semi Condensed, sans-serif;
 	font-weight: lighter;
-
 }
 
-h2 {
+/*Circles and progress bar*/
+.row {
+    margin: 0 auto;
+    transform: translateZ(-0.5px) scale(1.5);
+    position: absolute;
+    top: 20em;
+    width: 100%;
+}
+
+.progress:before {
+    
+}
+/*h2 {
 	font-family: 'Arimo' , sans-serif;
 	font-size: 20px;
 	text-align: center;
 	color: #fff;
 	letter-spacing: 3px;
-	/*position: absolute;*/
-}
-
+	position: absolute;
+}*/
 
 body {
 	height: 100vh;
@@ -103,24 +119,23 @@ img {
 
 .back {
 	/*making it a bit slow*/
-	-webkit-transform: translateZ(-1px) scale(2.1);/* scale helps fix the image back to original size*/
+	-webkit-transform: translateZ(-2px) scale(2.1);/* scale helps fix the image back to original size*/
 	transform: translateZ(-1px) scale(2.1);
 	position: relative;
-	top: calc(((100vh - 70.00vw ) / 4) * -2);
+	top: calc(((100vh - 70.00vw ) / 4) * -1);
+	margin: 0;
+	padding: 0;
 }
 /*Make it have motion */
-
-
-
+/*About section has image in the way, try to resolve soon*/
 .about {
 	font-size: 40px;
-	padding: 0em 1em;
-	margin: 0;
+	padding: 1em 1em;
+	margin: 0 auto;
 	position: relative;
-	z-index: 2;
 	text-align: left;
 	font-family: 'PT-Sans', sans-serif;
-	background-color: white;
+	background-color: #f3f3f3;
 	color: grey;
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
@@ -140,33 +155,41 @@ img {
 	padding: 10px;
 	margin-bottom: 20px;
 	font-weight: lighter;
-	font-family: Open Sans, sans-serif;
-	font-weight: lighter;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 17px;
 	text-transform: uppercase;
-	cursor: pointer;	
+	cursor: pointer;
+    transition: background-color 0.5s; /*Quick transition back after hover*/
 }
 
 .contact:hover {
-	background-color: grey;
+	background-color: #ffffff;
+    color: #000000;
 	font-weight: lighter;
+    transition: background-color 1s;
 }
 
 
 .portfolio {
-	
+	padding: 1em 1em;
+	z-index: 2;
+	position: relative;
+	background-color: #000000;
+	color: #f3f3f3;
+	font-family: PT-Sans, sans-serif;
+	font-size: 40px;
+	font-weight: lighter;
 }
 
 .front {
-	background-color: black;
-	padding: 10em 1em;
+	background-color: #000000;
+	padding: 5em 1em;
 	position: relative;
 	z-index: 2;
-	color: white;
+	color: #f3f3f3;
 	text-align: center;
 	font-family: 'PT+Sans', sans-serif;
 	font-size: 20px;
-	top: -1em;
 }
 
 .intro {
@@ -183,5 +206,15 @@ img {
 	font-family: 'Arimo', sans-serif;
 	position: absolute;
 	font-size: 15px;
+}
+/*Contact panel*/
+.contact-below {
+    padding: 1em 1em;
+    position: relative;
+    background-color: #f3f3f3;
+    color: #000000;
+    font-family: PT-Sans, sans-serif;
+    font-size: 40px;
+    z-index: 2;
 }
 

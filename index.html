@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>-->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">
-<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Open+Sans" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Arimo|PT+Sans|Open+Sans|Encode+Sans+Semi+Condensed" rel="stylesheet">
+  <title>Katies Truong</title>
+</head>
 <style>
-<!--Apply to all Font Awesome Icons*
+/*Apply to all Font Awesome Icons*/
 .fa {
-  padding: 40px;
+  padding: 5px;
   font-size: 50px;
-  width: 10px;
   text-align: center;
   text-decoration: none;
-}/-->
-.fa {
-  padding: 10px;
-  text-align: center;
-  right: 47%;
+  position: relative;
 }
 
 .fa:hover {
@@ -33,9 +26,6 @@
   background: black;
   color: white;
   text-decoration: none;
-  padding: 5px;
-  position: relative;
-  text-align: center;
 }
 
 .fa-codepen {
@@ -43,100 +33,46 @@
    background: black;
    color: white;
    text-decoration: none;
-   padding: 5px;
-   position: relative;
-   text-align: center;
 }
 
 .fa-free-code-camp {
   background: black;
   color: white;
-  font-size: 50px;  
+  font-size: 50px;
   text-decoration: none;
-  padding: 5px;
-  position: relative;
-  text-align: center;
 }
-<!--With icon fonts, fix them where they can be grouped
-when padding and adding spaces between them
-.icon-css3-alt {
-  text-align: center;
-  font-size: 50px;
-  position: absolute;
-  top: 16.5em;
-  width: 100%;
-  -webkit-transform: translateZ(-0.5px) scale(1.5);
-  transform: translateZ(-0.5px) scale(1.5);
-}
-
-.icon-html5-alt {
-  text-align: center;
-  font-size: 50px;
-  position: absolute;
-  top: 16.5em;
-  width: 100%;
-  right: 80px;
-  -webkit-transform: translateZ(-0.5px) scale(1.5);
-  transform: translateZ(-0.5px) scale(1.5);
-}
-
-.icon-javascript-alt {
-  text-align: center;
-  font-size: 50px;
-  position: absolute;
-  top: 16.5em;
-  width: 100%;
-  left: 90px;
-  -webkit-transform: translateZ(-0.5px) scale(1.5);
-  transform: translateZ(-0.5px) scale(1.5);
-}
-
-.icon-python {
-  text-align: center;
-  font-size: 50px;
-  position: absolute;
-  top: 16.5em;
-  width: 100%;
-  left: 185px;
-  -webkit-transform: translateZ(-0.5px) scale(1.5);
-  transform: translateZ(-0.5px) scale(1.5);
-}
-
-.icon-java {
-  text-align: center;
-  font-size: 50px;
-  position: absolute;
-  top: 16.5em;
-  width: 100%;
-  right: 150px;
-  -webkit-transform: translateZ(-0.5px) scale(1.5);
-  transform: translateZ(-0.5px) scale(1.5);
-}  -->
 </style>
 
 <!--allows mobile response-->
 <div class="container-fluid">
-    <head>
-        <title>Katies Truong</title>
-    </head>
   <div class="parallax-group">
+    <!--navigation bar-->
+    <div class="top-bar">
     <nav>
       <ul>
 	    <li><a href="#contact">Contact</a></li>
 		<li><a href="#portfolio">Portfolio</a></li>
 		<li><a href="#about">About</a></li>
 	  </ul>
-	</nav>  
+	</nav>
+      </div>    
     <img class="back" src="dark.jpg" alt="">
+    <!--first panel of parallax-->
     <h1>Katies Truong</h1>
 	<p class="skills">Skills</p>
-	<!--fix icons with grouped padding-->
-	<!--possibly add them as ul items to make padding easier-->
-	<!--<i class="icon-html5-alt"></i>
-	<i class="icon-css3-alt"></i>
-	<i class="icon-javascript-alt"></i>
-	<i class="icon-python"></i>
-	<i class="icon-java"></i>-->
+    <!--Circle...of life!
+    <div class="row" >
+        <!--w=600 h=600
+      <svg viewBox="160 0 1400 1000">
+          <g stroke="black" fill="none" stroke-width="3">
+          <circle cx="500" cy="430" r="100"/>
+          <circle cx="740" cy="430" r="100"/>
+          <circle cx="980" cy="430" r="100"/>
+          <circle cx="1220" cy="430" r="100"/>
+          </g>
+      </svg>-->
+    </div>
+      <!--second panel of parallax-->
 	  <header class="front">
       <p class="uppercase">In Construction</p>
       <p class="intro">Web Developer . Sydney Australia</p>
@@ -145,23 +81,31 @@ when padding and adding spaces between them
 	    <a href="https://codepen.io/katiesT/" class="fa fa-codepen" target="_blank"></a>
 	    <a href="https://freecodecamp.org/polytheshepard" class="fa fa-free-code-camp" target="_blank"></a>
 	  </header>
-    <div class="about">
-	  <p>About</p>
-	  <div class="details">
-	    <p>I'm a starting web developer interested in front-end development.
-		<br>
-		</p>
+	<body>
+      <!--About panel-->
+      <div class="about">
+	    <h3>About</h3>
+	    <div class="details">
+	      <p>I'm a starting web developer interested in front-end development.
+		  <br>
+		  </p>
+	    </div>
+      </div>
+      <!--Portfolio panel-->
+	  <div class="portfolio">
+	    <h3>Portfolio</h3>
 	  </div>
-    </div>
-	<div class="portfolio">
-	  <!--add portfolio here-->
-	</div>
-  </div>
-    <body>
         <div class="background">
-          <!--possible unneeded-->
+          <!--possibly unneeded-->
         </div>
-        
+        <!--Contact panel-->
+        <!--<div class="contact-below">
+            <h3>Contact</h3>
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="E-mail">
+            <input type="text" name="message" placeholder="Message">
+        </div>-->
     </body>
+	</div>
 </div>
 </html>
