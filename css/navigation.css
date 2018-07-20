@@ -33,12 +33,27 @@ li a {
 }
 
 li a:hover {
-	color: #fd9003;
+	color: #fff;
     transition: 0.5s;
 }
 
 /*After the hovering reverts back to black*/
 li a:hover::after{
 	opacity: 1;
+}
+
+/* hover bar */
+.nav-highlight {
+    color: #fd9003;
+    flex: 1;
+    background-image: linear-gradient(to right, #fd9003 0, #fd9003 100%);
+    background-position: 0 1.5em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background 0.5s;
+}
+
+.nav-highlight:hover {
+    background-size: 100% 100%;
 }
 
