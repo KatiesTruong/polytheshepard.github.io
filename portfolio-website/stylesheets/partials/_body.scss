@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+$raleway-font: Raleway, sans-serif;
+
+
+html {
+  background-color: #fed3a2;
+  height: 100%;
+  margin: 0 auto;
+}
+
+body {
+  overflow-x: hidden;
+  background:  #fed3a2;
+  color: #fff;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+main {
+  font-family: $raleway-font;
+  margin: 4em 5em;
+}
+
+.hero-image {
+  background-image: url("../img/watermelon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 70%;
+  position: relative;
+  padding: 20%;
+}
+
+.container {
+  position: relative;
+  h2, p {
+    color: #000c14 ;
+  }
+}
+
+
+
+

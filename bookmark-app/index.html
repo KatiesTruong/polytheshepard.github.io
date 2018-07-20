@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, intial-scale=1'>
+    <title>Website Bookmarker</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body onload='fetchBookmarks()'>
+    <div id="particles-js">
+    <h1>Website Bookmarker</h1>
+    <form id='form' onsubmit='return validateBookmarks()'>
+    <div class="fa fa-heart"></div>
+    <h2>Bookmark your Favourite Sites</h2>
+    <span id='errorFillform'></span>
+    <div class='input-group'>
+      <label>Site Name</label>
+      <input type='text' id='siteName' placeholder='Website Name'>
+      <br>
+      <span id='errorSite'></span>
+    </div>
+    <br>
+    <div class='input-group'>
+      <label>Site URL</label>
+      <input type='text' id='siteURL' placeholder='URL Name'>
+      <br>
+      <span id='errorURL'></span>
+      <span id='errorRegURL'></span>
+      <br>
+      <button type='submit'>Submit</button>
+    </div>
+    </form>
+     <div id='bookMarkResults'></div>
+     <footer>
+       <p>&copy Bookmarker 2018</p>
+     </footer>
+     </div>
+     <!-- Particles library -->
+     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+     <script src='js/main.js'></script>
+     <script>
+     particlesJS.load('particles-js', 'js/particles.json', function() {
+         console.log('particles.json loaded...');
+      });
+     </script>
+   </body>
+</html>

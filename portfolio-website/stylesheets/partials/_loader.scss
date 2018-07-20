@@ -1,0 +1,274 @@
+
+html {
+  margin: 0 auto;
+ }
+
+#loader-watermelon {
+    border: 10px #b1a701 solid;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    background-color: #f8002f;
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    z-index: 1100;
+}
+ 
+#loader {
+  position: absolute;
+  top: 0; 
+  z-index: 1000;
+  background: #000c14;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Seeds */
+
+.seeds {
+    position: absolute;
+    background-image: url('../img/watermelonseed-small.svg');
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+/* Position each seed*/
+
+#seed-one {
+    left: 118px;
+    top: 21px;
+}
+
+#seed-two {
+    left: 164px;
+    top: 45px;
+    transform: rotate(40deg);
+}
+
+#seed-three {
+    left: 192px;
+    top: 82px;
+    transform: rotate(70deg);
+}
+
+#seed-four {
+    left: 201px;
+    top: 123px;
+    transform: rotate(90deg);
+}
+
+#seed-five {
+    left: 187px;
+    top: 164px;
+    transform: rotate(110deg);
+}
+
+#seed-six {
+    left: 157px;
+    top: 194px;
+    transform: rotate(140deg);
+}
+
+#seed-seven {
+    left: 112px;
+    top: 203px;
+    transform: rotate(180deg);
+}
+
+#seed-eight {
+    left: 67px;
+    top: 188px;
+    transform: rotate(210deg);
+}
+
+#seed-nine {
+    left: 37px;
+    top: 161px;
+    transform: rotate(240deg);
+}
+
+#seed-ten {
+    left: 23px;
+    top: 118px;
+    transform: rotate(260deg);
+}
+
+#seed-eleven {
+    left: 30px;
+    top: 73px;
+    transform: rotate(280deg);
+}
+
+#seed-twelve {
+    left: 63px;
+    top: 35px;
+    transform: rotate(310deg);
+}
+
+/* Loading SVG */
+
+#loading-image {
+    font-size: 100px;
+    font-family: $raleway-font, sans-serif;
+    display: block;
+    left: 70%;
+    transform: translate(-50%, 50%);
+    margin-top: -1.8em;
+    font-weight: 700;
+    fill: none;
+    position: absolute;
+}
+
+text {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 0.1px;
+    stroke-dasharray: 1200;
+    opacity: 1;
+    animation: animate 2.5s cubic-bezier(0.38, 0.51, 0.96, 0.63) infinite;
+    -webkit-animation: animate 2.5s cubic-bezier(0.38, 0.51, 0.96, 0.63) infinite;
+    -moz-animation: animate 2.5s cubic-bezier(0.38, 0.51, 0.96, 0.63) infinite;
+    -o-animation: animate 2.5s cubic-bezier(0.38, 0.51, 0.96, 0.63) infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1200;
+    }
+
+    30% {
+        opacity: 1;
+        fill: none;
+    }
+
+    60% {
+        fill:#000c14;
+    }
+
+    80% {
+        opacity: 1;
+        fill: rgba(255,255,255,1);
+    }
+
+    100% {
+        opacity: 1;
+        fill: rgba(255,255,255,1);
+    }
+}
+
+@-webkit-keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1200;
+    }
+
+    30% {
+        opacity: 1;
+        fill: none;
+    }
+
+    60% {
+        fill:#000c14;
+    }
+
+    80% {
+        opacity: 1;
+        fill: rgba(255,255,255,1);
+    }
+
+    100% {
+        opacity: 1;
+        fill: rgba(255,255,255,1);
+    }
+}
+
+@-moz-keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1200;
+    }
+
+    30% {
+        opacity: 1;
+        fill: none;
+    }
+
+    60% {
+        fill:#000c14;
+    }
+
+    80% {
+        opacity: 1;
+        fill: rgba(255,255,255,1);
+    }
+
+    100% {
+        opacity: 1;
+        fill: rgba(255,255,255,1);
+    }
+}
+
+@-o-keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1200;
+    }
+
+    30% {
+        opacity: 1;
+        fill: none;
+    }
+
+    60% {
+        fill:#000c14;
+    }
+
+    80% {
+        opacity: 1;
+        fill: rgba(255,255,255,1);
+    }
+
+    100% {
+        opacity: 1;
+        fill: rgba(255,255,255,1);
+    }
+}
+
+

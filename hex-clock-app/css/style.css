@@ -1,0 +1,109 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#clock {
+  font-weight: 300;
+  font-size: 5em;
+  letter-spacing: 20px;
+}
+
+#hex-colour {
+  font-size: 2em;
+}
+
+#analog-clock {
+  background: url(../img/clock.svg) no-repeat center;
+  background-size: 90%;
+  position: relative;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.6),
+              inset 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* Adds the circle hand in the center of the clock*/
+#analog-clock.center-circle:after { 
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 4.5%;
+  height: 4.5%;
+  z-index: 10;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* Initialise hand containers */
+.hours-container, .minutes-container, .seconds-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Create the hours, minutes and second hands */
+#hours {
+  background: #fff;
+  height: 20%;
+  left: 48.75%;
+  position: absolute;
+  top: 30%;
+  transform-origin: 50% 100%;
+  width: 2.5%;
+}
+
+#minutes {
+  background: #fff;
+  height: 40%;
+  left: 49%;
+  position: absolute;
+  top: 10%;
+  transform-origin: 50% 100%;
+  width: 2%;
+}
+
+#seconds {
+  background: #fff;
+  height: 45%;
+  left: 49.5%;
+  position: absolute;
+  top: 14%;
+  transform-origin: 50% 80%;
+  width: 1%;
+  z-index: 8;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.hours-container {
+  animation: rotate 43200s infinite linear;
+}
+
+/* Cubic-bezier gives the bounce effect*/
+.minutes-container {
+  transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
+}
+
+.seconds-container {
+  transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
+}
