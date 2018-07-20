@@ -1,0 +1,312 @@
+@import url('responsive-screen.css');
+@import url('navigation.css');
+
+html {
+	box-sizing: border-box;
+	/* removes scroll bars*/
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 90px;
+	color: #000000;
+	position: absolute;
+	top: 2em;
+	width: 100%;
+	box-sizing: border-box; /* allows for the text remain in entire page */
+	text-align: center;
+	letter-spacing: 3px;
+	border-top: 2.5px solid;
+	border-bottom: 2.5px solid;
+	height:130px;
+	margin: 0;
+	-webkit-transform: translateZ(-0.5px) scale(1.5);
+	transform: translateZ(-0.5px) scale(1.5);
+	font-family: 'Source Code Pro', monospace;
+    font-weight: normal;
+}
+
+.typewriter {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 40px;
+    position: relative;
+    width: 24em;
+    bottom: 14em;
+	-webkit-transform: translateZ(-0.5px) scale(1.5);
+	transform: translateZ(-0.5px) scale(1.5);
+}
+
+.typewriter span {
+    background-color: #fff;
+    line-height: 1.2;
+}
+
+.text-highlight {
+    color: #fd9003;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*Circles and progress bar*/
+.block {
+    margin: 0 auto;
+    transform: translateZ(-0.5px) scale(1.5);
+    position: absolute;
+    top: 20em;
+    width: 100%;
+}
+    
+h3 {
+    text-shadow: 2px 2px #797878;
+    font-family: Cabin, sans-serif;
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	/* screen performance for mobile*/
+	-webkit-overflow-scrolling: touch;
+	-webkit-perspective: 1px;
+	perspective: 1px;
+}
+
+.parallax-group {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+/*
+.skills {
+	top: 8em;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	-webkit-transform: translateZ(-0.5px) scale(1.5);
+	transform: translateZ(-0.5px) scale(1.5);
+}*/
+
+.back {
+	/*making it a bit slow*/
+	-webkit-transform: translateZ(-2px) scale(2.1);/* scale helps fix the image back to original size*/
+	transform: translateZ(-1px) scale(2.1);
+	position: relative;
+	top: calc(((100vh - 70.00vw ) / 4) * -1);
+	margin: 0;
+	padding: 0;
+    width: 100%;
+    opacity: 0.7;
+}
+/*Make it have motion */
+/*About section has image in the way, try to resolve soon*/
+.about {
+	font-size: 40px;
+	padding: 1em 1em;
+	margin: 0 auto;
+	position: relative;
+	text-align: left;
+	font-family: 'PT-Sans', sans-serif;
+	background-color: #f3f3f3;
+	color: grey;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.details {
+	font-size: 20px;
+}
+/*Apply to all Font Awesome Icons*/
+.fa {
+  padding: 5px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  font-size: 50px;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-codepen {
+   font-size: 50px;
+   background: black;
+   color: white;
+   text-decoration: none;
+}
+
+.fa-free-code-camp {
+  background: black;
+  color: white;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.contact {
+	/*centers the box*/
+	margin: auto;
+	border: 1px solid;
+	border-radius: 5px;
+	left: 50%;
+	width: 120px;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-weight: lighter;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+	text-transform: uppercase;
+	cursor: pointer;
+    transition: background-color 0.5s; /*Quick transition back after hover*/
+}
+
+.contact:hover {
+	background-color: #fd9003;
+    color: #000000;
+	font-weight: lighter;
+    transition: background-color 1s;
+}
+
+
+.portfolio {
+	padding: 1em 1em;
+	z-index: 2;
+	position: relative;
+	background-color: #191919;
+	color: #f3f3f3;
+	font-family: PT-Sans, sans-serif;
+	font-size: 40px;
+	font-weight: lighter;
+}
+
+.front {
+	background-color: #000000;
+	padding: 5em 1em;
+	position: relative;
+	z-index: 2;
+	color: #f3f3f3;
+	text-align: center;
+	font-family: 'PT+Sans', sans-serif;
+	font-size: 20px;
+}
+
+.intro {
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.background {
+	font-family: 'Arimo', sans-serif;
+	position: absolute;
+	font-size: 15px;
+}
+
+/* Gridbox for portfolio images */
+.column {
+    display: flex;
+    flex-direction: row;
+    flew-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+
+.row {
+    flex-basis: 100%;
+}
+
+.p-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 3px 3px 3px 2px #000;
+    transition: transform 0.2s;
+}
+
+.p-image:hover {
+    transform: scale(1.2);
+    background-color: #000;
+}
+
+#image-one {
+    background-image: url("../images/portfolio.png");
+}
+
+#image-two {
+    background-image: url("../images/hex-clock.png");
+}
+
+#image-three {
+    background-image: url("../images/bookmark.png");
+}
+
+.text {
+    text-align: center;
+    margin: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #0a0a0a;
+    font-family: Cabin, sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #d4d0d0ab;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*Contact panel*/
+.contact-below {
+    padding: 1em 1em;
+    position: relative;
+    background-color: #f3f3f3;
+    color: #000000;
+    font-family: PT-Sans, sans-serif;
+    font-size: 40px;
+    z-index: 2;
+}
+
+/*@media (max-width: 1200px) {
+    .cursor {
+        bottom: 11em;
+    }
+}
+
+@media (max-width: 950px) {
+    .cursor {
+        bottom: 3em;
+    }
+}*/
