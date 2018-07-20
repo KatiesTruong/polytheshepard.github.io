@@ -47,7 +47,7 @@ li a:hover::after{
     color: #fd9003;
     flex: 1;
     background-image: linear-gradient(to right, #fd9003 0, #fd9003 100%);
-    background-position: 0 1.5em;
+    background-position: 0 -0.1em;
     background-size: 0 100%;
     background-repeat: no-repeat;
     transition: background 0.5s;
