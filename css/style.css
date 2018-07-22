@@ -26,6 +26,21 @@ h1 {
     font-weight: normal;
 }
 
+#logo {
+    background-image: url(../images/kt-logo-hex.png);
+    width: 130px;
+    position: absolute;
+    bottom: 10em;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
 .typewriter {
     font-family: 'Anonymous Pro', monospace;
     font-size: 40px;
@@ -47,7 +62,6 @@ h1 {
     font-style: italic;
 }
 
-/*Circles and progress bar*/
 .block {
     margin: 0 auto;
     transform: translateZ(-0.5px) scale(1.5);
@@ -115,6 +129,22 @@ body {
 	transform: translateZ(0);
 }
 
+/* Flexbox grid wrapper*/
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.row {
+    flex-basis: 100%;
+}
+
+.row:nth-child(1) {
+    height: 5em;
+}
+
 .details {
 	font-size: 20px;
 }
@@ -136,6 +166,7 @@ body {
   background: black;
   color: white;
   text-decoration: none;
+  margin-top: 40px;
 }
 
 .fa-codepen {
@@ -143,6 +174,7 @@ body {
    background: black;
    color: white;
    text-decoration: none;
+   margin-top: 40px;
 }
 
 .fa-free-code-camp {
@@ -150,11 +182,13 @@ body {
   color: white;
   font-size: 50px;
   text-decoration: none;
+  margin-top: 40px;
 }
 
 .contact {
 	/*centers the box*/
 	margin: auto;
+    margin-top: 10px;
 	border: 1px solid;
 	border-radius: 5px;
 	left: 50%;
@@ -167,6 +201,18 @@ body {
 	text-transform: uppercase;
 	cursor: pointer;
     transition: background-color 0.5s; /*Quick transition back after hover*/
+    background-color: #000;
+    color: #fff;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,330%);
+    position: absolute;
+}
+
+.contact a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
 }
 
 .contact:hover {
@@ -174,6 +220,10 @@ body {
     color: #000000;
 	font-weight: lighter;
     transition: background-color 1s;
+}
+
+.contact a:hover {
+    color: #000;
 }
 
 
