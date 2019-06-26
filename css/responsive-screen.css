@@ -1,8 +1,0 @@
-/* For screen responsiveness */
-
-/* Main page*/
-@media screen and (max-width: 1000px) {
-    cursor {
-        bottom: 10em;
-    }
-}
