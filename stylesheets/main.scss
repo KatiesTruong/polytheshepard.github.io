@@ -1,0 +1,23 @@
+// Partial files
+@import "partials/typography.scss";
+@import "partials/background.scss";
+
+h1 {
+  font-family: $heading-font-family;
+  color: $heading-color;
+  font-size: $heading-font-size;
+  text-transform:  $text-uppercase;
+  text-shadow: $heading-shadow;
+  position: absolute;
+}
+
+.sky-background {
+  background-image: $background;
+  width: $background-full;
+  height: 100vh;
+  z-index: -200;
+}
+
+.container-fluid {
+  padding: 0px;
+}
