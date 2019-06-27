@@ -1,17 +1,22 @@
+// Module files
+
 // Partial files
 @import "partials/typography.scss";
 @import "partials/background.scss";
+@import "partials/color.scss";
+@import "partials/animation.scss";
 
 h1 {
-  font-family: $heading-font-family;
+  font-family: $heading-font-family, Verdana, sans-serif;
   color: $heading-color;
   font-size: $heading-font-size;
   text-transform:  $text-uppercase;
   text-shadow: $heading-shadow;
   position: absolute;
+  margin-top: 200px;
 }
 
-.sky-background {
+.sky-background { 
   background-image: $background;
   width: $background-full;
   height: 100vh;
@@ -21,3 +26,25 @@ h1 {
 .container-fluid {
   padding: 0px;
 }
+
+.navbar {
+  background: transparent;
+  position: absolute;
+  height: 10vh;
+  a {
+    color: $white;
+    background-size: 0 100%;
+    transition: background .5s;
+    &:after {
+      content: '';
+      position: absolute;
+    }
+    &:hover {
+      color: $white;
+      background-size: 100% 100%;
+    }
+  }
+}
+
+
+

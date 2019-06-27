@@ -1,7 +1,14 @@
 {
-"version": 3,
-"mappings": "",
-"sources": [],
-"names": [],
-"file": "main.css"
+    "version": 3,
+    "mappings": "AECA,OAAO,CAAC,gEAAI;AFQZ,AAAA,EAAE,CAAC;EACD,WAAW,EEHS,IAAI,EAAE,UAAU,EFGD,OAAO,EAAE,UAAU;EACtD,KAAK,EELS,IAAI;EFMlB,SAAS,EEJS,KAAK;EFKvB,cAAc,EETC,SAAS;EFUxB,WAAW,EETI,CAAC,CAAC,IAAI,CAAC,IAAI,CAAC,mBAAmB;EFU9C,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,KAAK;CAClB;;AAED,AAAA,eAAe,CAAC;EACd,gBAAgB,EGnBL,8CAAgE;EHoB3E,KAAK,EGnBW,IAAI;EHoBpB,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,gBAAgB,CAAC;EACf,OAAO,EAAE,GAAG;CACb;;AAED,AAAA,OAAO,CAAC;EACN,UAAU,EAAE,WAAW;EACvB,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;CAQb;;AAXD,AAIE,OAJK,CAIL,CAAC,CAAC;EACA,KAAK,EInCD,IAAI;CJwCT;;AAVH,AAMI,OANG,CAIL,CAAC,AAEE,MAAM,CAAC;EACN,eAAe,EAAE,SAAS;EAC1B,KAAK,EItCH,IAAI;CJuCP",
+    "sources": [
+        "main.scss",
+        "modules/animation.scss",
+        "partials/typography.scss",
+        "partials/background.scss",
+        "partials/color.scss",
+        "partials/animation.scss"
+    ],
+    "names": [],
+    "file": "main.css"
 }
