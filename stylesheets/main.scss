@@ -4,7 +4,7 @@
 @import "partials/typography.scss";
 @import "partials/background.scss";
 @import "partials/color.scss";
-@import "partials/animation.scss";
+// @import "partials/animation.scss";
 
 h1 {
   font-family: $heading-font-family, Verdana, sans-serif;
@@ -14,6 +14,7 @@ h1 {
   text-shadow: $heading-shadow;
   position: absolute;
   margin-top: 200px;
+  margin-left: 50px;
 }
 
 .sky-background { 
@@ -28,23 +29,41 @@ h1 {
 }
 
 .navbar {
+  font-family: $nav-font;
   background: transparent;
   position: absolute;
   height: 10vh;
+  font-size: 30px;
+  .nav-link {
+    position: relative;
+    margin: .5rem 1rem;
+    padding: 0;
+  }
   a {
     color: $white;
-    background-size: 0 100%;
-    transition: background .5s;
+    text-shadow: $heading-shadow;
     &:after {
       content: '';
       position: absolute;
+      width: 0;
+      height: 4px;
+      right: 0;
+      transition: width 0.4s ease;
+      bottom: -3px;
+      box-shadow: $line-shadow;
     }
     &:hover {
       color: $white;
-      background-size: 100% 100%;
+      &:after {
+        width: 100%;
+        left: 0;
+        background: $white;
+      }
     }
   }
 }
+
+
 
 
 

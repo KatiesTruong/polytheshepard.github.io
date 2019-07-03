@@ -1,5 +1,6 @@
 // Google fonts
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 // Text formatting
 $text-uppercase: uppercase;
@@ -7,3 +8,6 @@ $heading-shadow: 0 10px 20px rgba(6, 9, 17, 0.6);
 $heading-color: #fff;
 $heading-font-family: Abel, sans-serif;
 $heading-font-size: 120px;
+$line-shadow: 0 5px 15px rgba(6, 9, 17, 0.6);
+
+$nav-font: Poppins, sans-serif;
